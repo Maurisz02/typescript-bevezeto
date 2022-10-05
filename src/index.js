@@ -36,7 +36,7 @@ class MyUser extends user_1.User {
 let users = [];
 users.push(user1);
 users.push(new user_1.User('Jamblebee', 150));
-console.log(users);
+//console.log(users); igy nem tudja kiirni for each el kell
 let u = users[0];
 for (let e of users) {
     e.kiir();
@@ -47,3 +47,22 @@ let nevUser = new Map(); //manualis hozzarendeles
 let nevUser2 = new Map(); //auto hozza rendeles
 nevUser2.set("usernev", new user_1.User("valami", 33));
 nevUser2.get("usernev").kiir();
+function osszeg(t) {
+}
+console.log(osszeg([1, 423, 55, 2]));
+console.log(osszeg(['a', 'b', 'zs']));
+function idKiir(id) {
+    if (typeof id === 'number') {
+        console.log(id);
+    }
+    else {
+        console.log(id.toUpperCase());
+    }
+}
+idKiir(12);
+idKiir("aaaaaaaaaa");
+let elem = document.getElementById('sa');
+if (elem != null) {
+    console.log(elem.textContent);
+}
+console.log(elem === null || elem === void 0 ? void 0 : elem.textContent);
