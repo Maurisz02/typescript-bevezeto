@@ -9,6 +9,7 @@
 //node ./src/index.js
 //tsconfig > target allitja a typescript verzióját
 //export import combo
+//npm i -g typescript
 Object.defineProperty(exports, "__esModule", { value: true });
 const user_1 = require("./user");
 function negyzet(szam) {

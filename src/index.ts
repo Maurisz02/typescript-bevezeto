@@ -8,6 +8,7 @@
 //node ./src/index.js
 //tsconfig > target allitja a typescript verzióját
 //export import combo
+//npm i -g typescript
 
 import { User } from "./user";
 
