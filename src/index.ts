@@ -6,21 +6,11 @@
 //npm és npx különbség
 //function visszatérési érték értéke masodik : utan () közé : {}
 //node ./src/index.js
+//tsconfig > target allitja a typescript verzióját
+//export import combo
 
-class User{
-    #nev : string;
-    #eletkor : number;
+import { User } from "./user";
 
-    constructor(nev: string,eletkor:number){
-        this.#nev = nev;
-        this.#eletkor = eletkor;
-    }
-
-    kiir() : void {
-        console.log(this.#nev,this.#eletkor);
-    }
-
-}
 
 function negyzet (szam : number) : number {
     return szam*szam;
@@ -47,3 +37,7 @@ let s : number = negyzet(3)
 
 let user1 = new User('Maurisz', 19);
 user1.kiir();
+
+class MyUser extends User{
+
+}
