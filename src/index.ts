@@ -42,3 +42,22 @@ user1.kiir();
 class MyUser extends User{
 
 }
+
+let users : User[] = [];
+users.push(user1);
+users.push(new User('Jamblebee', 150));
+console.log(users);
+let u = users[0];
+for(let e of users){
+    e.kiir();
+}
+
+let usernames : Array<string> = ["u1","u2"];
+
+let userHalmaz : Set<User> = new Set();
+
+let nevUser : Map<string,User> = new Map(); //manualis hozzarendeles
+let nevUser2 = new Map(); //auto hozza rendeles
+
+nevUser2.set("usernev",new User("valami",33));
+nevUser2.get("usernev").kiir();

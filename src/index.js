@@ -33,3 +33,17 @@ let user1 = new user_1.User('Maurisz', 19);
 user1.kiir();
 class MyUser extends user_1.User {
 }
+let users = [];
+users.push(user1);
+users.push(new user_1.User('Jamblebee', 150));
+console.log(users);
+let u = users[0];
+for (let e of users) {
+    e.kiir();
+}
+let usernames = ["u1", "u2"];
+let userHalmaz = new Set();
+let nevUser = new Map(); //manualis hozzarendeles
+let nevUser2 = new Map(); //auto hozza rendeles
+nevUser2.set("usernev", new user_1.User("valami", 33));
+nevUser2.get("usernev").kiir();
