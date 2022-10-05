@@ -86,3 +86,15 @@ if (elem != null){
    console.log( elem.textContent);
 }
 console.log(elem?.textContent);
+
+function szamol(){
+    let szam = parseInt((document.getElementById('szam') as HTMLInputElement).value); //as tipus kényszerítés
+    (document.getElementById('kimenet') as HTMLElement).textContent = negyzet(szam).toString();
+}
+
+
+function init(){
+    document.getElementById('szam')?.addEventListener('input',szamol);
+}
+
+document.addEventListener('DOMContentLoaded',init);
